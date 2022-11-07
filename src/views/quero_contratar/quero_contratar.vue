@@ -10,13 +10,14 @@
             medicamentos para você ou sua empresa, agora na palma das suas mãos!
           </p>
           <div class="buttons">
+            <button class="btn" disabled>Contratar para mim</button>
             <button
               class="btn"
               @click="$router.push('/quero_contratar_empresa')"
+              disabled
             >
-              Contratar para mim
+              Contratar para minha empresa
             </button>
-            <button class="btn">Contratar para minha empresa</button>
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@ export default {};
   }
   .image-rigth {
     height: 100%;
-    background: blue;
+    background: #133c7e;
     width: 50%;
   }
 }

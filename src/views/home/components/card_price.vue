@@ -22,7 +22,9 @@
           </ul>
         </div>
       </div>
-      <button class="btn">Contratar já</button>
+      <button class="btn" @click="$router.push('/quero_contratar')">
+        Contratar já
+      </button>
     </div>
     <div class="card">
       <div class="content-item">
@@ -49,7 +51,9 @@
           </ul>
         </div>
       </div>
-      <button class="btn">Contratar já</button>
+      <button class="btn" @click="$router.push('/quero_contratar')">
+        Contratar já
+      </button>
     </div>
     <div class="card">
       <div class="content-item">
@@ -76,7 +80,9 @@
           </ul>
         </div>
       </div>
-      <button class="btn">Contratar já</button>
+      <button class="btn" @click="$router.push('/quero_contratar')">
+        Contratar já
+      </button>
     </div>
   </div>
 </template>

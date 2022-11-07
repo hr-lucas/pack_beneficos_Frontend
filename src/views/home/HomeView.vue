@@ -9,7 +9,7 @@
             Tenha o BENEFÍCIO de consultas médicas e descontos reais em
             medicamentos para você ou sua empresa, agora na palma das suas mãos!
           </p>
-          <button class="btn">Contrara agora</button>
+          <a class="btn" href="#valor_plano"> Contrara agora </a>
         </div>
         <div class="image-left"></div>
       </div>
@@ -19,19 +19,31 @@
       <div class="flex">
         <CardComponent
           class="item"
+          image="../../../img/G_01.9cdcb0dd.svg"
           text="Atendimento sem filas. 24h por dia, 7 dias da semana;"
         />
         <CardComponent
           class="item"
+          image="../../../img/G_02.fa7d38d8.svg"
           text="95% de efetividade de atendimento concluído em vídeo sem a necessidade pronto socorro;"
         />
-        <CardComponent class="item" text="Psicologia por vídeo;" />
         <CardComponent
+          image="../../../img/G_03.4b2d5511.svg"
+          class="item"
+          text="Psicologia por vídeo;"
+        />
+        <CardComponent
+          image="../../../img/G_04.692d1034.svg"
           class="item"
           text="95% de efetividade de atendimento concluído em vídeo sem a necessidade pronto socorro;"
         />
-        <CardComponent class="item" text="Desconto reais em medicamentos. ;" />
         <CardComponent
+          image="../../../img/G_05.7d95b7be.svg"
+          class="item"
+          text="Desconto reais em medicamentos. ;"
+        />
+        <CardComponent
+          image="../../../img/G_06.1b9bfe0c.svg"
           class="item"
           text="Prescrição de medicamentos e atestados digitais;"
         />
@@ -59,10 +71,11 @@
             situação de saúde por tele-medicina.
           </p>
         </div>
-        <button class="btn">Porque contratar a pack?</button>
+
+        <a class="btn" href="/#porque_contratar">Porque contratar a pack?</a>
       </div>
     </section>
-    <section class="por-que-contratar" id="about">
+    <section class="por-que-contratar" id="porque_contratar">
       <p>Por que contratar a pack?</p>
       <div class="dec"></div>
       <h2>Para mim: Economia de tempo e dinheiro</h2>
@@ -80,7 +93,7 @@
         </div>
       </section>
     </div>
-    <section class="como-funciona container">
+    <section id="como_funciona" class="como-funciona container">
       <div class="dec"></div>
       <h2>Como funciona</h2>
       <div class="passo">
@@ -162,7 +175,7 @@
         </div>
       </div>
     </section>
-    <section class="price container">
+    <section class="price container" id="valor_plano">
       <div class="dec"></div>
       <h2>O plano ideal para você e sua empresa</h2>
 
@@ -191,37 +204,37 @@ export default {
     return {
       watch_contrat_pf: [
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/01.34e23c74.svg",
           text: "A espera em um pronto-socorro pode levar em média de 2 a 4h para casos que não são considerados como graves. Além disso, existe o tempo para você se deslocar até o pronto-socorro; Na Pack seu atendimento é sem fila 24h por dia.",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/2.16326520.svg",
           text: "R$ 439,54 é o valor médio mensal pago em um plano de saúde, considerando que ainda há coparticipação em boa parte dos casos;  O plano padrão da Pack custa por ANO R$ 298,80;",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/3.677a8548.svg",
           text: "O gasto médio com medicamento das pessoas é de R$ 138,32 por atendimento; Na Pack você tem desconto de R$ 30,00 nos medicamentos receitados na consulta. ",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/4.a3ecdddb.svg",
           text: "O custo médio de uma consulta particular com um clínico geral é de R$ 110,00, fora o valor gasto com medicamentos; Na Pack você não paga pelas consultas, apenas a sua mensalidade;",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/5.e9a273e0.svg",
           text: "O custo médio de uma sessão com um psicólogo é de R$ 130,00. O ideal são duas sessões por mês, totalizando R$ 260,00; Na Pack você não paga pelas consultas, apenas a sua mensalidade;",
         },
       ],
       watch_contrat_pj: [
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/6.e2f2c81d.svg",
           text: "O custo de oferecer como benefício a assistência da Pack pode ser até 30x MENOR que um plano de saúde convencional. ",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/7.3703c7f3.svg",
           text: "Mais de 55% dos colaboradores são atraídos por benefícios na hora de escolher uma empresa, de acordo com o estudo Employee Benefits Study em 2019;",
         },
         {
-          url: "../../../assets/SVG/01.svg",
+          url: ".../../img/8.084bacbb.svg",
           text: "69% dos colaboradores dizem ter mais lealdade com os empregadores por conta da gama de benefícios. ",
         },
       ],
@@ -253,12 +266,15 @@ export default {
       }
       p {
         font-size: 1.3rem;
+        margin-bottom: 30px;
       }
       .btn {
-        width: 300px;
+        width: 500px;
         font-size: 1.2rem;
         border-radius: 100px;
-        margin-top: 20px;
+        padding: 20px 100px;
+        margin-top: 150px;
+        text-decoration: none;
       }
     }
     .image-left {
@@ -320,6 +336,7 @@ export default {
       padding: 10px;
       align-items: center;
       text-align: left;
+      margin-bottom: 25px;
       img {
         width: 15%;
       }
@@ -331,8 +348,9 @@ export default {
     }
     .btn {
       width: 300px;
+      padding: 10px 40px;
       border-radius: 10px;
-      margin-top: 20px;
+      text-decoration: none;
     }
   }
 }

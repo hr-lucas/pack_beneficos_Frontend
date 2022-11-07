@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../../../assets/SVG/01.svg" :alt="text" />
+    <img :src="image" :alt="text" />
     <p>{{ text }}</p>
   </div>
 </template>

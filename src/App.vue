@@ -15,6 +15,13 @@
   box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+:target {
+  scroll-margin-top: 0.8em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #f6f8fa;
 }

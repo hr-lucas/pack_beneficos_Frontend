@@ -94,7 +94,7 @@ export default {
   }
   .image-rigth {
     height: 100%;
-    background: blue;
+    background: #133c7e;
     width: 50%;
   }
 }

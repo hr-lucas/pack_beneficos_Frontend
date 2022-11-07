@@ -8,6 +8,12 @@
       </div>
       <nav>
         <ul>
+          <li>
+            <a href="/#porque_contratar">Porque contratar a Pack??</a>
+          </li>
+          <li>
+            <a href="/#como_funciona">Como funciona?</a>
+          </li>
           <li v-for="(menu, index) in menus" :key="index">
             <router-link :to="menu.path">{{ menu.name }}</router-link>
           </li>
@@ -27,14 +33,6 @@ export default {
   data() {
     return {
       menus: [
-        {
-          name: "Porque contratar a Pack?",
-          path: "#about",
-        },
-        {
-          name: "Como funciona?",
-          path: "#como_funciona",
-        },
         {
           name: "Perguntas frequentes",
           path: "perguntas_frequentes",

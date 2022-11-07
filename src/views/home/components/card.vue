@@ -1,7 +1,8 @@
 <template>
   <div class="card-section">
     <div class="image">
-      <uil-Airplay size="100%" class="logo" />
+      <img :src="image" :alt="text" />
+      <!-- <uil-Airplay size="100%" clss="logo" /> -->
     </div>
 
     <p>{{ text }}</p>
@@ -9,7 +10,7 @@
 </template>
 
 <script>
-import { UilAirplay } from "@iconscout/vue-unicons";
+// import { UilAirplay } from "@iconscout/vue-unicons";
 
 export default {
   name: "cardComponent",
@@ -18,7 +19,7 @@ export default {
     image: String,
   },
   components: {
-    UilAirplay,
+    // UilAirplay,
   },
 };
 </script>
