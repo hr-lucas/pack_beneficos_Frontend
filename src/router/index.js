@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../views/home/HomeView.vue";
 
 const routes = [
   {
@@ -8,13 +8,24 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/perguntas_frequentes",
+    name: "perguntas-frequentes",
+    component: () => import("../views/Common_questions/AboutView.vue"),
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/login/loginView.vue"),
+  },
+  {
+    path: "/quero_contratar",
+    name: "quero_contratar",
+    component: () => import("../views/quero_contratar/quero_contratar.vue"),
+  },
+  {
+    path: "/quero_contratar_empresa",
+    name: "quero_contratar_empresa",
+    component: () => import("../views/contratar_empresa/contratar_empresa.vue"),
   },
 ];
 
