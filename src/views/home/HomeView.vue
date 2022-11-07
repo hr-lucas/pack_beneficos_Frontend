@@ -62,7 +62,7 @@
         <button class="btn">Porque contratar a pack?</button>
       </div>
     </section>
-    <section class="por-que-contratar">
+    <section class="por-que-contratar" id="about">
       <p>Por que contratar a pack?</p>
       <div class="dec"></div>
       <h2>Para mim: Economia de tempo e dinheiro</h2>
@@ -168,11 +168,13 @@
 
       <CardPriceComponent />
     </section>
+    <FooterComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from "@/core/components/TheHeader.vue";
+import FooterComponent from "@/core/components/TheFooter.vue";
 import CardComponent from "./components/card.vue";
 import CardHorizontalCompent from "./components/card_horizontal.vue";
 import CardPriceComponent from "./components/card_price.vue";
@@ -180,6 +182,7 @@ export default {
   name: "HomeView",
   components: {
     HeaderComponent,
+    FooterComponent,
     CardComponent,
     CardHorizontalCompent,
     CardPriceComponent,
@@ -230,7 +233,8 @@ export default {
 <style lang="scss" scoped>
 .header-emphasis {
   padding: 100px 2%;
-  min-height: 80vh;
+  position: relative;
+  min-height: 90vh;
   height: 100%;
   display: flex;
   align-items: center;

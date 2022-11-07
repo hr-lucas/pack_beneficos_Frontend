@@ -2,7 +2,9 @@
   <section>
     <div class="menu container">
       <div class="logo">
-        <img src="../../assets/SVG/LOGO.svg" alt="Pack Beneficios" />
+        <router-link to="/">
+          <img src="../../assets/SVG/LOGO.svg" alt="Pack Beneficios" />
+        </router-link>
       </div>
       <nav>
         <ul>
@@ -13,9 +15,7 @@
       </nav>
       <div class="action-end">
         <router-link to="quero_contratar">Quero contratar</router-link>
-        <router-link to="quero_contratar"
-          ><button class="btn">Login</button></router-link
-        >
+        <router-link to="login"><button class="btn">Login</button></router-link>
       </div>
     </div>
   </section>
@@ -29,7 +29,7 @@ export default {
       menus: [
         {
           name: "Porque contratar a Pack?",
-          path: "#porque_contratar_pack",
+          path: "#about",
         },
         {
           name: "Como funciona?",
@@ -53,6 +53,10 @@ export default {
 section {
   width: 100%;
   background: white;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
   .menu {
     margin: 0 auto;
     padding: 20px 0px;
