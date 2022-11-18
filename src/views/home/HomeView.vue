@@ -4,48 +4,50 @@
     <section class="header-emphasis">
       <div class="container">
         <div class="information">
-          <h2>Plano de saude 100% Digital, na palma da sua Mão.</h2>
+          <h2>Convênio de saúde 100% Digital, na palma da sua Mão.</h2>
           <p>
-            Tenha o BENEFÍCIO de consultas médicas e descontos reais em
-            medicamentos para você ou sua empresa, agora na palma das suas mãos!
+            Tenha o benefício de consultas médicas e descontos reais em
+            medicamentos, para você ou sua empresa, agora, na palma de suas mão!
           </p>
-          <a class="btn" href="#valor_plano"> Contrara agora </a>
+          <a class="btn" href="#valor_plano"> Contratar agora </a>
         </div>
-        <div class="image-left"></div>
+        <div class="image-left">
+          <img src="../../assets/IMAGES/ARTE-min.png" alt="" />
+        </div>
       </div>
     </section>
     <section class="section-card">
-      <h2>So quem tem Pack Benefícios Ganha tempo e praticidade.</h2>
+      <h2>Só quem tem Pack Benefícios ganha tempo e praticidade.</h2>
       <div class="flex">
         <CardComponent
           class="item"
-          image="../../../img/G_01.9cdcb0dd.svg"
-          text="Atendimento sem filas. 24h por dia, 7 dias da semana;"
+          image="G_01.svg"
+          text="Atendimento sem filas: 24h por dia, 7 dias por semana."
         />
         <CardComponent
           class="item"
-          image="../../../img/G_02.fa7d38d8.svg"
+          image="G_02.svg"
+          text="Médicos generalistas, clínico geral, médico da família e pediatra por vídeo.  "
+        />
+        <CardComponent
+          image="G_03.svg"
+          class="item"
+          text="Atendimento psicológico por vídeo."
+        />
+        <CardComponent
+          image="G_04.svg"
+          class="item"
           text="95% de efetividade de atendimento concluído em vídeo sem a necessidade pronto socorro;"
         />
         <CardComponent
-          image="../../../img/G_03.4b2d5511.svg"
+          image="G_05.svg"
           class="item"
-          text="Psicologia por vídeo;"
+          text="Descontos reais em medicamentos."
         />
         <CardComponent
-          image="../../../img/G_04.692d1034.svg"
+          image="G_06.svg"
           class="item"
-          text="95% de efetividade de atendimento concluído em vídeo sem a necessidade pronto socorro;"
-        />
-        <CardComponent
-          image="../../../img/G_05.7d95b7be.svg"
-          class="item"
-          text="Desconto reais em medicamentos. ;"
-        />
-        <CardComponent
-          image="../../../img/G_06.1b9bfe0c.svg"
-          class="item"
-          text="Prescrição de medicamentos e atestados digitais;"
+          text="Prescrição de medicamentos e atestados digitais."
         />
       </div>
     </section>
@@ -55,30 +57,30 @@
       </div>
       <div class="information">
         <div class="dec"></div>
-        <h2>O QUE VOCÊ EVITA TENDO PACK BENEFICIOS</h2>
+        <h2>Você sabia?</h2>
         <div class="card">
           <img src="../../assets/SVG/HOSPITAl.svg" alt="" />
           <p>
-            51% das pessoas buscam o pronto-socorro como primeira opção quando
-            precisam de atendimento médico.
+            51% das pessoas vão ao pronto-socorro como primeira opção de
+            atendimento médico.
           </p>
         </div>
         <div class="dec"></div>
         <div class="card">
           <img src="../../assets/SVG/CAMERA.svg" alt="" />
           <p>
-            80% dos pacientes que vão ao pronto-socorro poderiam resolver sua
-            situação de saúde por tele-medicina.
+            80% desses casos poderiam ser resolvidos por meio da telemedicina,
+            como a Pack faz!
           </p>
         </div>
 
-        <a class="btn" href="/#porque_contratar">Porque contratar a pack?</a>
+        <a class="btn" href="/#porque_contratar">Por que contratar a Pack? </a>
       </div>
     </section>
     <section class="por-que-contratar" id="porque_contratar">
       <p>Por que contratar a pack?</p>
       <div class="dec"></div>
-      <h2>Para mim: Economia de tempo e dinheiro</h2>
+      <h2>PARA VOCÊ: ECONOMIA DE TEMPO E DINHEIRO</h2>
       <div v-for="text in watch_contrat_pf" :key="text.text">
         <CardHorizontalCompent :text="text.text" :image="text.url" />
       </div>
@@ -87,7 +89,7 @@
       <section class="por-que-contratar-empresa">
         <p>Por que contratar a pack?</p>
         <div class="dec"></div>
-        <h2>Para sua empresa</h2>
+        <h2>PARA SUA EMPRESA</h2>
         <div v-for="text in watch_contrat_pj" :key="text.text">
           <CardHorizontalCompent :text="text.text" :image="text.url" />
         </div>
@@ -107,8 +109,8 @@
           </div>
           <div class="descricao">
             <p>
-              Contratando para você ou sua empresa, você apenas precisa escolher
-              dentre os planos qual se adequa melhor para suas necessidades, a
+              Ao contratar o plano para você ou sua empresa, é necessário apenas
+              escolher dentre eles qual se adequa melhor às suas necessidades. A
               contratação pode ser online ou você pode falar com um de nossos
               consultores, da forma que preferir.
             </p>
@@ -123,13 +125,13 @@
         <div class="information">
           <div class="passo-numero">
             <p>2</p>
-            <span>Fazendo o primeiro acesso:</span>
+            <span>Fazendo o primeiro acesso</span>
           </div>
           <div class="descricao">
             <p>
-              Após fazer a contratação de um de nossos planos você receberá um
-              e-mail com as instruções para baixar o nosso ou ou realizar o seu
-              primeiro acesso;
+              Após efetuar a contratação de um de nossos planos, você receberá
+              um e-mail com as instruções para baixar o nosso app ou realizar o
+              seu primeiro acesso. Siga as orientações.
             </p>
           </div>
         </div>
@@ -141,14 +143,14 @@
         <div class="information">
           <div class="passo-numero">
             <p>3</p>
-            <span>Agendando a sua primeira consulta:</span>
+            <span>Agendando sua primeira consulta</span>
           </div>
           <div class="descricao">
             <p>
-              Após logar na área do cliente você poderá agendar o seu
-              atendimento com um de nossos médicos com no mínimo 15 minutos de
-              antecedência. Você receberá por WhatsApp, SMS e e-mail o link para
-              atendimento por vídeo.
+              Após logar na área do cliente, você poderá agendar o seu
+              atendimento com um de nossos médicos com, no mínimo, 15 minutos de
+              antecedência. Depois receberá por WhatsApp, SMS e e-mail o link
+              para o atendimento por vídeo.
             </p>
           </div>
         </div>
@@ -160,16 +162,16 @@
         <div class="information">
           <div class="passo-numero">
             <p>4</p>
-            <span>Desconto em medicamentos:</span>
+            <span>Descontos em medicamentos</span>
           </div>
           <div class="descricao">
             <p>
-              Os descontos são feitos por meio de reembolso e são válidos apenas
-              para medicamentos receitados pelas consultas realizadas na Pack.
-              Você deve entrar em contato com o suporte pelo WhatsApp XXX e
-              enviar a receita médica junto com o comprovante fiscal da compra
-              do medicamento. O reembolso será realizado via transferência
-              bancária em até 2 (dois) dias úteis.
+              Os descontos são válidos apenas para medicamentos prescritos nas
+              consultas realizadas por meio da Pack. Você deve entrar em contato
+              com o suporte pelo WhatsApp (34) 8432-7928 e enviar a receita
+              médica junto com o comprovante fiscal da compra do medicamento. O
+              reembolso será realizado via transferência bancária em até 2
+              (dois) dias úteis.
             </p>
           </div>
         </div>
@@ -204,38 +206,38 @@ export default {
     return {
       watch_contrat_pf: [
         {
-          url: ".../../img/01.34e23c74.svg",
-          text: "A espera em um pronto-socorro pode levar em média de 2 a 4h para casos que não são considerados como graves. Além disso, existe o tempo para você se deslocar até o pronto-socorro; Na Pack seu atendimento é sem fila 24h por dia.",
+          url: "01.svg",
+          text: "A espera em um pronto-socorro pode durar de 2 a 4h para casos que não são considerados graves. Além disso, existe o tempo gasto no deslocamento. Na Pack o seu atendimento é sem fila, 24h por dia.",
         },
         {
-          url: ".../../img/2.16326520.svg",
-          text: "R$ 439,54 é o valor médio mensal pago em um plano de saúde, considerando que ainda há coparticipação em boa parte dos casos;  O plano padrão da Pack custa por ANO R$ 298,80;",
+          url: "2.svg",
+          text: "R$439,54 é o valor médio mensal pago em um plano de saúde, considerando que ainda há coparticipação em alguns casos. O plano padrão da Pack custa, por ano, R$298,80",
         },
         {
-          url: ".../../img/3.677a8548.svg",
-          text: "O gasto médio com medicamento das pessoas é de R$ 138,32 por atendimento; Na Pack você tem desconto de R$ 30,00 nos medicamentos receitados na consulta. ",
+          url: "3.svg",
+          text: "O gasto médio com medicamentos por atendimento é de R$138,32. Na Pack você tem desconto de R$30,00 nos medicamentos prescritos.",
         },
         {
-          url: ".../../img/4.a3ecdddb.svg",
-          text: "O custo médio de uma consulta particular com um clínico geral é de R$ 110,00, fora o valor gasto com medicamentos; Na Pack você não paga pelas consultas, apenas a sua mensalidade;",
+          url: "4.svg",
+          text: "O custo médio de uma consulta particular com um clínico geral é de R$110,00, fora o valor gasto com medicamentos. Na Pack você não paga pelas consultas, apenas a mensalidade.",
         },
         {
-          url: ".../../img/5.e9a273e0.svg",
-          text: "O custo médio de uma sessão com um psicólogo é de R$ 130,00. O ideal são duas sessões por mês, totalizando R$ 260,00; Na Pack você não paga pelas consultas, apenas a sua mensalidade;",
+          url: "5.svg",
+          text: "O custo médio de uma sessão com um psicólogo é de R$130,00. O ideal são pelo menos duas sessões por mês, totalizando R $260,00. Na Pack você não paga pelas consultas, apenas a sua mensalidade.",
         },
       ],
       watch_contrat_pj: [
         {
-          url: ".../../img/6.e2f2c81d.svg",
-          text: "O custo de oferecer como benefício a assistência da Pack pode ser até 30x MENOR que um plano de saúde convencional. ",
+          url: "6.svg",
+          text: "O custo de oferecer como benefício a assistência da Pack pode ser até 30x MENOR que um plano de saúde convencional.",
         },
         {
-          url: ".../../img/7.3703c7f3.svg",
-          text: "Mais de 55% dos colaboradores são atraídos por benefícios na hora de escolher uma empresa, de acordo com o estudo Employee Benefits Study em 2019;",
+          url: "7.svg",
+          text: "Mais de 55% dos colaboradores são atraídos por benefícios na hora de escolher uma empresa, de acordo com o estudo Employee Benefits Study, de 2019.",
         },
         {
-          url: ".../../img/8.084bacbb.svg",
-          text: "69% dos colaboradores dizem ter mais lealdade com os empregadores por conta da gama de benefícios. ",
+          url: "8.svg",
+          text: "69% dos colaboradores dizem ter mais lealdade com os empregadores por conta da gama de benefícios oferecidos. ",
         },
       ],
     };
@@ -255,6 +257,13 @@ export default {
   background: radial-gradient(circle at right top, #2a65c5, #133c7e);
   .container {
     display: flex;
+    background: url("../../assets/IMAGES/ARTE-min.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 100px 50px;
+    border-radius: 10px;
     .information {
       width: 50%;
       text-align: left;
@@ -279,6 +288,9 @@ export default {
     }
     .image-left {
       width: 70%;
+      img {
+        display: none;
+      }
     }
   }
 }
@@ -493,10 +505,20 @@ export default {
     flex-direction: column-reverse;
     .container {
       flex-direction: column-reverse;
+      padding: 20px 0;
+      background: none;
       .information {
         width: 100%;
         padding: 10px 3%;
         text-align: left;
+      }
+      .image-left {
+        width: 100%;
+        img {
+          border-radius: 10px;
+          width: 100%;
+          display: block;
+        }
       }
     }
   }

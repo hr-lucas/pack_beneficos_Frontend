@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="menu">
-        <h3>Falar Conosco</h3>
+        <h3>Fale conosco</h3>
         <ul>
           <li>
             <a href="mail::suporte@packbeneficios.com.br" target="_blank"

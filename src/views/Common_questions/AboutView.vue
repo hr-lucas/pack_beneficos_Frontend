@@ -104,7 +104,7 @@ export default {
           title:
             "Não recebi a prescrição e o atestado após a consulta, o que devo fazer?",
           description:
-            "Por favor, envie um e-mail explicando o seu caso para XXX para que possam te auxiliar.",
+            "Por favor, envie um e-mail explicando o seu caso para suporte@packbeneficios.com.br para que possam te auxiliar.",
         },
       ],
     };

@@ -56,7 +56,8 @@ export default {
       if (!this.form) return;
 
       this.loading = true;
-      setTimeout(() => (this.loading = false), 2000);
+      const removeMask = cpf.strip(this.cpfSend);
+      window.location.href = `https://patient.docway.com.br/appointment/PackBeneficiosCompleto/create?documento=${removeMask}`;
     },
   },
   watch: {

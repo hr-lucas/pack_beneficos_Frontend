@@ -1,7 +1,7 @@
 <template>
   <div class="card-section">
     <div class="image">
-      <img :src="image" :alt="text" />
+      <img :src="`https://packbeneficios.com.br/SVG/${image}`" :alt="text" />
       <!-- <uil-Airplay size="100%" clss="logo" /> -->
     </div>
 
@@ -17,9 +17,6 @@ export default {
   props: {
     text: String,
     image: String,
-  },
-  components: {
-    // UilAirplay,
   },
 };
 </script>

@@ -10,11 +10,15 @@
             medicamentos para você ou sua empresa, agora na palma das suas mãos!
           </p>
           <div class="buttons">
-            <button class="btn" disabled>Contratar para mim</button>
+            <button
+              class="btn"
+              @click="$router.push('/quero_contratar_fisica')"
+            >
+              Contratar para mim
+            </button>
             <button
               class="btn"
               @click="$router.push('/quero_contratar_empresa')"
-              disabled
             >
               Contratar para minha empresa
             </button>
@@ -83,6 +87,34 @@ export default {};
     height: 100%;
     background: #133c7e;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .contratar_tempalte {
+    flex-direction: column;
+    .information {
+      padding: 10px 2%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+      .container_inf {
+        justify-content: space-evenly;
+        .content_info {
+          margin-top: 10px;
+          .buttons {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    .image-rigth {
+      width: 100%;
+      height: 50%;
+      display: none;
+    }
   }
 }
 </style>

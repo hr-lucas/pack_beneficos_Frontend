@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="image" :alt="text" />
+    <img :src="`https://packbeneficios.com.br/SVG/${image}`" :alt="text" />
     <p>{{ text }}</p>
   </div>
 </template>

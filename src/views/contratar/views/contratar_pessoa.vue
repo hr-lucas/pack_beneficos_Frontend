@@ -2,56 +2,57 @@
   <div class="contratar_tempalte">
     <div class="information">
       <div class="container_inf">
-        <img src="../../assets/SVG/LOGO.svg" alt="Pack Benefcios" />
+        <img src="../../../assets/SVG/LOGO.svg" alt="Pack Benefcios" />
+
         <div class="content_info" v-if="mensagemSucesso">
           <h2>Conheça a Pack Benefícios</h2>
           <p>Preencha os campos abaixo com o seus dados.</p>
-          <v-form v-model="form" @submit.prevent="onSubmit">
+          <v-form
+            v-model="form"
+            name="formulario_pessoa"
+            id="formulario_pessoa"
+            @submit.prevent="onSubmit"
+          >
             <v-text-field
               v-model="dadosFormulario.nomeCompleto"
               class="mb-2"
               label="Nome completo"
               variant="outlined"
+              type="text"
+              name="nomeCompleto"
               :rules="organizationRules"
               required
             ></v-text-field>
             <v-text-field
               v-model="dadosFormulario.email"
-              class="mb-2"
+              name="email"
               type="email"
+              class="mb-2"
               required
               :rules="emailRules"
-              label="E-mail corporativo"
+              label="E-mail Pessoal"
               variant="outlined"
             ></v-text-field>
             <!-- Start -->
             <v-row>
               <v-col cols="12" md="6">
                 <v-text-field
+                  name="quantidadePessoas"
+                  type="text"
+                  v-model="dadosFormulario.numeroPessoas"
                   :rules="organizationRules"
-                  v-model="dadosFormulario.nomeEmpresa"
                   class="mb-2"
-                  label="Nome da empresa"
-                  variant="outlined"
                   required
+                  label="Quantidade pessoal no plano"
+                  v-maska="['#', '##', '###', '#.###', '##.###', '###.###']"
+                  variant="outlined"
                 ></v-text-field>
               </v-col>
 
               <v-col cols="12" md="6">
                 <v-text-field
-                  v-model="dadosFormulario.numeroFuncionarios"
-                  :rules="organizationRules"
-                  class="mb-2"
-                  required
-                  label="Nº funcionários"
-                  v-maska="['#', '##', '###', '#.###', '##.###', '###.###']"
-                  variant="outlined"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" md="6">
-                <v-text-field
+                  name="telefone"
+                  type="text"
                   :rules="phoneRules"
                   v-model="dadosFormulario.telefone"
                   class="mb-2"
@@ -61,18 +62,20 @@
                   required
                 ></v-text-field>
               </v-col>
-
-              <v-col cols="12" md="6">
-                <v-text-field
-                  :rules="organizationRules"
-                  v-model="dadosFormulario.cargo"
-                  class="mb-2"
-                  label="Cargo"
-                  required
-                  variant="outlined"
-                ></v-text-field>
-              </v-col>
             </v-row>
+            <v-select
+              v-model="dadosFormulario.select"
+              :items="items"
+              item-title="plan"
+              item-value="value"
+              name="selectPlano"
+              label="Selecione plano"
+              persistent-hint
+              return-object
+              required
+              variant="outlined"
+              single-line
+            ></v-select>
             <!-- End -->
 
             <v-btn
@@ -88,6 +91,7 @@
             </v-btn>
           </v-form>
         </div>
+        <SendInformation v-else />
       </div>
     </div>
     <div class="image-rigth"></div>
@@ -96,16 +100,25 @@
 
 <script>
 // import { cpf } from "cpf-cnpj-validator";
-
+import SendInformation from "../components/sendInforamtion.vue";
 export default {
+  components: {
+    SendInformation,
+  },
   data() {
     return {
       form: false,
+      items: [
+        { plan: "Plano Básico", value: "PL_B" },
+        { plan: "Plano Padrão", value: "PL_P" },
+        { plan: "Plano Completo", value: "PL_C" },
+      ],
       dadosFormulario: {
         nomeCompleto: null,
+        select: null,
         email: null,
         nomeEmpresa: null,
-        numeroFuncionarios: null,
+        numeroPessoas: null,
         telefone: null,
         cargo: null,
       },
@@ -147,6 +160,7 @@ export default {
   display: flex;
   width: 100%;
   height: 100vh;
+  background: white;
   .information {
     width: 50%;
     .container_inf {
@@ -160,6 +174,7 @@ export default {
       img {
         max-width: 180px;
       }
+
       .content_info {
         margin-top: 100px;
         h2 {
@@ -198,6 +213,26 @@ export default {
     height: 100%;
     background: blue;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .contratar_tempalte {
+    flex-direction: column;
+    .information {
+      width: 100%;
+
+      padding: 25px 2%;
+      .container_inf {
+        margin-top: 10px;
+        .content_info {
+          margin-top: 100px;
+        }
+        .buttons {
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
 </style>

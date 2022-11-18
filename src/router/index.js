@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/home/HomeView.vue";
+import AboutView from "../views/Common_questions/AboutView.vue";
+import QueroContratarView from "../views/quero_contratar/quero_contratar.vue";
+import ContratarView from "@/views/contratar/views/contratar_empresa.vue";
+import ContratarPfView from "@/views/contratar/views/contratar_pessoa.vue";
+import LoginView from "../views/login/loginView.vue";
 
 const routes = [
   {
@@ -10,22 +15,27 @@ const routes = [
   {
     path: "/perguntas_frequentes",
     name: "perguntas-frequentes",
-    component: () => import("../views/Common_questions/AboutView.vue"),
+    component: AboutView,
   },
   {
     path: "/login",
     name: "login",
-    component: () => import("../views/login/loginView.vue"),
+    component: LoginView,
   },
   {
     path: "/quero_contratar",
     name: "quero_contratar",
-    component: () => import("../views/quero_contratar/quero_contratar.vue"),
+    component: QueroContratarView,
   },
   {
     path: "/quero_contratar_empresa",
     name: "quero_contratar_empresa",
-    component: () => import("../views/contratar_empresa/contratar_empresa.vue"),
+    component: ContratarView,
+  },
+  {
+    path: "/quero_contratar_fisica",
+    name: "quero_contratar_fisica",
+    component: ContratarPfView,
   },
 ];
 
